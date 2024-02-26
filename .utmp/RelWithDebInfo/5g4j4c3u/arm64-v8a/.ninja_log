@@ -1,0 +1,9 @@
+# ninja log v5
+1082	7888	7306440533310658	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b06c0aa32ba2152f
+993	8317	7306440533365667	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ad4754bad2cb6bab
+580	9045	7306440536528577	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	aac5b7c323e02d0c
+1270	10252	7306440542276961	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7f88fab15d22e8d6
+1261	10263	7306440552209087	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	87a543d88c2c1cd1
+1	10351	7306440548233697	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c39c07a2d95e5b4c
+965	10376	7306440548308901	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a889950194ce0b1a
+10376	10849	7306440561763829	D:/Unity Projects/Kingdom Survivor/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5g4j4c3u/obj/arm64-v8a/libgame.so	6d4ae963235e291b
