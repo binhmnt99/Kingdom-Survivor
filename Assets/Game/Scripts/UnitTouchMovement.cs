@@ -10,9 +10,11 @@ namespace Kingdom
 {
     public class UnitTouchMovement : MonoBehaviour
     {
+        [SerializeField] private float movementSpeed = 3.5f;
         [SerializeField] private Vector2 joystickSize = new Vector2(300, 300);
         [SerializeField] private FloatingJoystick joystick;
-        [SerializeField] private NavMeshAgent Unit;
+        [SerializeField] private NavMeshAgent navUnit;
+        [SerializeField] private Animator unitAnimator;
 
         private Finger MovementFinger;
         private Vector2 MovementAmount;
@@ -64,6 +66,8 @@ namespace Kingdom
         {
             if (finger == MovementFinger)
             {
+                unitAnimator.SetFloat("move",1f);
+                navUnit.speed = movementSpeed;
                 Vector2 knobPosition;
                 float maxMovement = joystickSize.x / 2f;
                 ETouch.Touch currentTouch = finger.currentTouch;
@@ -86,6 +90,7 @@ namespace Kingdom
         {
             if (finger == MovementFinger)
             {
+                unitAnimator.SetFloat("move",0f);
                 MovementFinger = null;
                 joystick.Knob.anchoredPosition = Vector2.zero;
                 joystick.gameObject.SetActive(false);
@@ -114,9 +119,9 @@ namespace Kingdom
 
         private void Update()
         {
-            Vector3 scaledMovement = Unit.speed * Time.deltaTime * new Vector3(MovementAmount.x, 0, MovementAmount.y);
-            Unit.transform.LookAt(Unit.transform.position + scaledMovement, Vector3.up);
-            Unit.Move(scaledMovement);
+            Vector3 scaledMovement = navUnit.speed * Time.deltaTime * new Vector3(MovementAmount.x, 0, MovementAmount.y);
+            navUnit.transform.LookAt(navUnit.transform.position + scaledMovement, Vector3.up);
+            navUnit.Move(scaledMovement);
         }
     }
 
