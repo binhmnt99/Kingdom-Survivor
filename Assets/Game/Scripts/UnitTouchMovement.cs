@@ -60,13 +60,13 @@ namespace Kingdom
             }
         }
 
-        private void HandleFingerMove(Finger movedFinger)
+        private void HandleFingerMove(Finger finger)
         {
-            if (movedFinger == MovementFinger)
+            if (finger == MovementFinger)
             {
                 Vector2 knobPosition;
                 float maxMovement = joystickSize.x / 2f;
-                ETouch.Touch currentTouch = movedFinger.currentTouch;
+                ETouch.Touch currentTouch = finger.currentTouch;
 
                 if (Vector2.Distance(currentTouch.screenPosition, joystick.RectTransform.anchoredPosition) > maxMovement)
                 {
@@ -82,9 +82,9 @@ namespace Kingdom
             }
         }
 
-        private void HandleLoseFinger(Finger lostFinger)
+        private void HandleLoseFinger(Finger finger)
         {
-            if (lostFinger == MovementFinger)
+            if (finger == MovementFinger)
             {
                 MovementFinger = null;
                 joystick.Knob.anchoredPosition = Vector2.zero;
