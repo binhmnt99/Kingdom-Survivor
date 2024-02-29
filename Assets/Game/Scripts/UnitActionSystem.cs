@@ -19,7 +19,9 @@ namespace Kingdom
                 unit = GameObject.FindAnyObjectByType<Unit>();
             }
             BaseAction firstAction = unit.GetBaseActionArray()[0];
+            action = firstAction;
         }
+
 
         public Unit GetUnit() => unit;
         public BaseAction GetAction() => action;
@@ -27,6 +29,7 @@ namespace Kingdom
         public void SetAction(BaseAction baseAction)
         {
             action = baseAction;
+            action.TakeAction();
             OnActionChanged?.Invoke(this, EventArgs.Empty);
         }
     }

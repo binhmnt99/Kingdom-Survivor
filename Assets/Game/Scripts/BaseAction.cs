@@ -13,6 +13,7 @@ namespace Kingdom
         }
 
         public abstract string GetActionName();
+        public abstract void TakeAction();
     }
 }
 
