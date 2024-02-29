@@ -12,7 +12,7 @@ public class Singleton<T> : MonoBehaviour where T : Component
             {
                 if (instance == null)
                 {
-                    instance = FindAnyObjectByType<T>();
+                    instance = FindFirstObjectByType<T>();
                     if (instance == null)
                     {
                         GameObject gameObject = new GameObject();
