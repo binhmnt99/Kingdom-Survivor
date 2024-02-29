@@ -926,13 +926,7 @@ MonoBehaviour:
   joystickSize: {x: 300, y: 300}
   joystick: {fileID: 675320338}
   navUnit: {fileID: 747229479}
-  unitAnimator: {fileID: 747229482}
---- !u!95 &747229482 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: e7e02a3929076fd4e923817fe395b950,
-    type: 3}
-  m_PrefabInstance: {fileID: 830856351}
-  m_PrefabAsset: {fileID: 0}
+  unitAnimator: {fileID: 0}
 --- !u!114 &747229484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d67209cefc9c414b8a2e854d48693a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitAnimator: {fileID: 747229482}
+  unitAnimator: {fileID: 0}
 --- !u!114 &747229488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,7 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2499db02e04dc554597a23ffcad6a9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitAnimator: {fileID: 747229482}
+  unitAnimator: {fileID: 0}
 --- !u!1001 &830856351
 PrefabInstance:
   m_ObjectHideFlags: 0

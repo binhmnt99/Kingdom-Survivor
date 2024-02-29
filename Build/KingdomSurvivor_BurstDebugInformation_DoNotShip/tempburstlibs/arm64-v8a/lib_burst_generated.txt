@@ -24,6 +24,7 @@ Library: D:\Unity Projects\Kingdom Survivor\Temp\BurstOutput\tempburstlibs\arm64
 --assembly-defines=Unity.RenderPipeline.Universal.ShaderLibrary;
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Unity Projects\Kingdom Survivor\Temp\Burst
@@ -75,6 +76,7 @@ Library: D:\Unity Projects\Kingdom Survivor\Temp\BurstOutput\tempburstlibs\arm64
 --assembly-defines=Unity.RenderPipeline.Universal.ShaderLibrary;
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Unity Projects\Kingdom Survivor\Temp\Burst

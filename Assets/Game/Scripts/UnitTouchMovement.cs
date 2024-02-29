@@ -19,6 +19,11 @@ namespace Kingdom
         private Finger MovementFinger;
         private Vector2 MovementAmount;
 
+        private void Awake()
+        {
+            unitAnimator = GetComponent<Animator>();
+        }
+
         private void OnEnable()
         {
             EnhancedTouchSupport.Enable();
@@ -123,6 +128,8 @@ namespace Kingdom
             navUnit.transform.LookAt(navUnit.transform.position + scaledMovement, Vector3.up);
             navUnit.Move(scaledMovement);
         }
+
+        public FloatingJoystick GetJoystick() => joystick;
     }
 
 }
